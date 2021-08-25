@@ -4,5 +4,5 @@ Help File foi criado com base no procedimento já criado pelo professor para pla
 
 ## Inicio
 
--- Neste tutorial esta sendo assumido que já existe uma cloud minimamente provisionada, esta manual não irá cobrir como provisionar acesso a cloud.
+-- Neste tutorial esta sendo assumido que já existe uma cloud minimamente provisionada, não será descrito como provisionar acesso a cloud.
 
