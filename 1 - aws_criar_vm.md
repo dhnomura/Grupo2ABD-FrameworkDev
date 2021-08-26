@@ -135,14 +135,14 @@ Para instalar e configurar o anaconda na VM vc deve acessá-la via SSH e executa
 
      ```
      Anaconda3 will now be installed into this location:
-     /home/pf1120/anaconda3
+     /home/ubuntu/anaconda3
      
        - Press ENTER to confirm the location
        - Press CTRL-C to abort the installation
        - Or specify a different location below
      
-     [/home/pf1120/anaconda3] >>> 
-     PREFIX=/home/pf1120/anaconda3
+     [/home/ubuntu/anaconda3] >>> 
+     PREFIX=/home/ubuntu/anaconda3
      Unpacking payload ...
      ```
      
@@ -170,8 +170,8 @@ Para instalar e configurar o anaconda na VM vc deve acessá-la via SSH e executa
 6. O instalador deverá finalizar a instalação com êxito. Para iniciar o Anaconda sem precisar fechar sua sessão e abrir uma outra, digite o seguinte comando:
 
    ```
-   pf1120@minha-primeira-vm:~$ source .bashrc
-   (base) pf1120@minha-primeira-vm:~$
+   ubuntu@minha-primeira-vm:~$ source .bashrc
+   (base) ubuntu@minha-primeira-vm:~$
    ```
 
    Note que agora há a palavra (base) no início da linha do prompt. Isso indica que o Anaconda está carregado com o ambiente *base* ativado
@@ -181,7 +181,7 @@ Para instalar e configurar o anaconda na VM vc deve acessá-la via SSH e executa
 1. Agora vamos criar um novo ambiente no anaconda com python 3.8 chamado fiap:
 
    ```
-   (base) pf1120@minha-primeira-vm:~$ conda create -n fiap python=3.8
+   (base) ubuntu@minha-primeira-vm:~$ conda create -n fiap python=3.8
    ```
 
 2. Uma série de informações sobre os pacotes a serem instalados aparecerá na tela e será solicitado que você confirme que quer proceder. Aperte ENTER para confirmar:
@@ -210,20 +210,20 @@ Para instalar e configurar o anaconda na VM vc deve acessá-la via SSH e executa
    #
    #     $ conda deactivate
    
-   (base) pf1120@minha-primeira-vm:~$ 
+   (base) ubuntu@minha-primeira-vm:~$ 
    ```
 
 3. Ative o novo ambiente:
 
     ```
-    (base) pf1120@minha-primeira-vm:~$ conda activate fiap
-    (fiap) pf1120@minha-primeira-vm:~$ 
+    (base) ubuntu@minha-primeira-vm:~$ conda activate fiap
+    (fiap) ubuntu@minha-primeira-vm:~$ 
     ```
 
 4. Inicialmente, vamos instalar o Jupyter e o pandas neste ambiente, mas posteriormente você provavelmente terá necessidade de instalar outros pacotes:
 
     ```
-    (fiap) pf1120@minha-primeira-vm:~$ conda install jupyter pandas
+    (fiap) ubuntu@minha-primeira-vm:~$ conda install jupyter pandas
     Collecting package metadata (current_repodata.json): done
     Solving environment: failed with initial frozen solve. Retrying with flexible solve.
     Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
@@ -240,7 +240,7 @@ Para instalar e configurar o anaconda na VM vc deve acessá-la via SSH e executa
 
     ## Package Plan ##
 
-    environment location: /home/pf1120/anaconda3/envs/fiap
+    environment location: /home/ubuntu/anaconda3/envs/fiap
 
     added / updated specs:
         - jupyter
@@ -418,24 +418,24 @@ Para instalar e configurar o anaconda na VM vc deve acessá-la via SSH e executa
     Preparing transaction: done
     Verifying transaction: done
     Executing transaction: done
-    (fiap) pf1120@minha-primeira-vm:~$ 
+    (fiap) ubuntu@minha-primeira-vm:~$ 
     ```
 
 6. Defina uma senha de acesso ao Jupyter. Esta senha será utilizada por todos os usuários que queiram acessar o ambiente:
 
     ```
-    (fiap) pf1120@minha-primeira-vm:~$ jupyter-notebook  password
+    (fiap) ubuntu@minha-primeira-vm:~$ jupyter-notebook  password
     Enter password: 
     Verify password: 
-    [NotebookPasswordApp] Wrote hashed password to /home/pf1120/.jupyter/jupyter_notebook_config.json
-    (fiap) pf1120@minha-primeira-vm:~$
+    [NotebookPasswordApp] Wrote hashed password to /home/ubuntu/.jupyter/jupyter_notebook_config.json
+    (fiap) ubuntu@minha-primeira-vm:~$
     ```
 
 7. Inicie o Jupyter:
 
    ```
-   (fiap) pf1120@minha-primeira-vm:~$ jupyter-notebook --no-browser --ip 0.0.0.0 --port 8888 
-    [I 18:48:16.007 NotebookApp] Serving notebooks from local directory: /home/pf1120
+   (fiap) ubuntu@minha-primeira-vm:~$ jupyter-notebook --no-browser --ip 0.0.0.0 --port 8888 
+    [I 18:48:16.007 NotebookApp] Serving notebooks from local directory: /home/ubuntu
     [I 18:48:16.007 NotebookApp] Jupyter Notebook 6.1.4 is running at:
     [I 18:48:16.007 NotebookApp] http://minha-primeira-vm:8888/
     [I 18:48:16.007 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
