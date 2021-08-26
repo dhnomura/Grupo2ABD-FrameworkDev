@@ -2,6 +2,12 @@
 
 Git para o trabalho de Framework de desenvolvimento do grupo 2 da Fiap, curso, engenharia de dados.
 
+
+# Sumário
+
+[Aula 01 - AWS Criando uma VM EC2](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/1%20-%20aws_criar_vm.md)
+
+
 ## Parte 1 - Provisionando uma VM
 
 [URL Parte 1](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/1%20-%20aws_criar_vm.md)
