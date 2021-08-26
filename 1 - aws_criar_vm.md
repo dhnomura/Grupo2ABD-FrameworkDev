@@ -553,19 +553,25 @@ Ao rodar o jupyter diretamente do prompt, ele parará de funcionar caso você de
 
 ## Configurando a aplicação Python
 
+Instalar o Unzip
 
 ```
 sudo apt install unzip
 ```
 
+Realizar o Download do Código Python
 
 ```
 wget https://github.com/thiagonogueira/iris_cloud/archive/refs/heads/main.zip
 ```
 
+Abrir o arquivo
+
 ```
 unzip main.zip
 ```
+
+Instalar requirimentos
 
 ```
 cd ~/iris_cloud-main
@@ -573,12 +579,20 @@ pip install requirements.txt
 ```
 
 
+Baixar arquivo customizado
+
 ```
 cd ~/iris_cloud-main
 mv application.py application.py.old
 wget https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/application.py
 ```
 
+Iniciar Aplicação
+
 ```
 python ~/iris_cloud-main/application.py &
 ```
+
+Validar a aplicação:
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt21.png)
