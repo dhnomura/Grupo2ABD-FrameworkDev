@@ -36,15 +36,23 @@ Caso seja a primeira vez que esteja provissionando um EC2, pode seguir este "Pas
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt02.png)
 
-1. Selecionar a Imagem: **"Ubuntu Server 18.04 LTS (HVM), SSD Volume Type"**
+4. Selecionar a Imagem: **"Ubuntu Server 18.04 LTS (HVM), SSD Volume Type"**
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt03.png)
 
+5. Instance Type: **t2.micro**
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt04.png)
+
+6. Instance Details: **Auto Assign Public IP: Enable**
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt05.png)
 
+7. Download Key Pair: **Create a new key pair**
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt06.png)
+
+8. Launch Instance
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt07.png)
 
