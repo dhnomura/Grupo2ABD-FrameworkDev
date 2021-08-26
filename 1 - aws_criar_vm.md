@@ -10,15 +10,27 @@ Neste tutorial esta sendo assumido que já existe uma cloud minimamente provisio
 
 Vale lembrar que este passos estão sendo realizados de forma que seja o mais simples possivel, em ambientes produtivos devemos seguir regras mais rigidas de segurança.
 
+
 1. No menu **service** selecionar **EC2**
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt01.png)
 
 
+2. Detalhes da criação da VM
+    - A VM será criada da forma mais simples possivel, abaixo as unicas modificações e configurações que serão necessárias:
+
 **Amazon Machine Image (AMI)**  ->  Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
+
 **Instance Type**               ->  t2.micro
+
 **Auto-assign Public IP**       ->  Enabled
+
 **Key Pair**                    ->  Create a new Key Pair **Fazer o Download e Salvar com cuidado**
+
+
+Caso seja a primeira vez que esteja provissionando um EC2, pode seguir este "Passo a Passo" abaixo:
+
+4. 
 
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt02.png)
