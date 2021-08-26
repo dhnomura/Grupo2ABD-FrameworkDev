@@ -595,4 +595,4 @@ python ~/iris_cloud-main/application.py &
 
 Validar a aplicação:
 
-![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt21.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt21.2.png)
