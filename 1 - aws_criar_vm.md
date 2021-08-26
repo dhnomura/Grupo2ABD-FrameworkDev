@@ -83,6 +83,7 @@ Caso seja a primeira vez que esteja provissionando um EC2, pode seguir este "Pas
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt14.png)
 
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt15.png)
 
 ##  Instalar o Anaconda na VM
 
