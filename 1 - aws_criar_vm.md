@@ -455,3 +455,35 @@ Para instalar e configurar o anaconda na VM vc deve acessá-la via SSH e executa
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt16.png)
 
 
+## Liberando os acessos necessário para o servidor WEB
+
+Lembrando que os steps abaixo são somente para fins educativos, em ambientes produtivos devemos ser mais rigorosos com as praticas que serão adotadas neste tutorial.
+
+1. Acessar a pagina do EC2:
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt01.png)
+
+
+2. Selecionar **Security Group**
+    Selecionar o nome da instancia que acabamos de subir
+    Abrir a aba de **security**
+    Acessar o **Security Group** vinculada a instancia
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt17.png)
+
+3. Editar os **Inbund Rules**
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt18.png)
+
+4. Editar conforme a seguir:
+    Porta 22 para MyIP
+    Porta 5000 para MyIP
+    Porta 8888 para MyIP
+    Salvar
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt19.png)
+
+5. Realizar o Teste novamente no Ip Publico na porta 8888 e desta vez o acesso deve funcionar, lembrando que esta restrito somente ao seu IP :).
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt20.png)
+
