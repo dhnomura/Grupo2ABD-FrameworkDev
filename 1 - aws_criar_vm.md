@@ -25,7 +25,7 @@ Vale lembrar que este passos estão sendo realizados de forma que seja o mais si
     -- **Auto-assign Public IP**       ->  Enabled
     -- **Key Pair**                    ->  Create a new Key Pair **Fazer o Download e Salvar com cuidado**
 
-
+a
 Caso seja a primeira vez que esteja provissionando um EC2, pode seguir este "Passo a Passo" abaixo:
 
 1. 
