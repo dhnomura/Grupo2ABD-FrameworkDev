@@ -4,5 +4,14 @@ Help File foi criado com base no procedimento já criado pelo professor para pla
 
 ## Inicio
 
--- Neste tutorial esta sendo assumido que já existe uma cloud minimamente provisionada, não será descrito como provisionar acesso a cloud.
+Neste tutorial esta sendo assumido que já existe uma cloud minimamente provisionada, não será descrito como provisionar acesso a cloud.
 
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt01.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt02.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt03.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt04.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt05.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt06.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt07.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt08.png)
