@@ -28,13 +28,15 @@ Vale lembrar que este passos estão sendo realizados de forma que seja o mais si
      
      **Key Pair**                    ->  Create a new Key Pair **Fazer o Download e Salvar com cuidado**
 
-a
+
 Caso seja a primeira vez que esteja provissionando um EC2, pode seguir este "Passo a Passo" abaixo:
 
-1. 
+3. Launch Instance -> Launch Instance
 
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt02.png)
+
+1. Selecionar a Imagem: **"Ubuntu Server 18.04 LTS (HVM), SSD Volume Type"**
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt03.png)
 
