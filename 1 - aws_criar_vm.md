@@ -450,3 +450,8 @@ Para instalar e configurar o anaconda na VM vc deve acessá-la via SSH e executa
     ```
     Você deve obter uma saída igual a mostrada acima.
 
+9. Podemos tentar acessar o Jupyter Notebook pelo endereço Publico na porta 8888, porém é esperado que não funcione, os passos a seguir mostraremos como liberar o acesso (Somente para testes!)
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt15.png)
+
+
