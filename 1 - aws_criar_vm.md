@@ -6,12 +6,32 @@ Help File foi criado com base no procedimento já criado pelo professor para pla
 
 Neste tutorial esta sendo assumido que já existe uma cloud minimamente provisionada, não será descrito como provisionar acesso a cloud.
 
+## Provisionando um novo EC2
+
+Vale lembrar que este passos estão sendo realizados de forma que seja o mais simples possivel, em ambientes produtivos devemos seguir regras mais rigidas de segurança.
+
+1. No menu **service** selecionar **EC2**
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt01.png)
+
+
+**Amazon Machine Image (AMI)**  ->  Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
+**Instance Type**               ->  t2.micro
+**Auto-assign Public IP**       ->  Enabled
+**Key Pair**                    ->  Create a new Key Pair **Fazer o Download e Salvar com cuidado**
+
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt02.png)
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt03.png)
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt04.png)
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt05.png)
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt06.png)
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt07.png)
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt08.png)
+
