@@ -481,7 +481,7 @@ Lembrando que os steps abaixo são somente para fins educativos, em ambientes pr
     Porta 8888 para MyIP
     Salvar
 
-![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt19.png)
+
 
 5. Realizar o Teste novamente no Ip Publico na porta 8888 e desta vez o acesso deve funcionar, lembrando que esta restrito somente ao seu IP :).
 
