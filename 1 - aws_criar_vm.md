@@ -56,5 +56,10 @@ Caso seja a primeira vez que esteja provissionando um EC2, pode seguir este "Pas
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt07.png)
 
+9. View Instances
+    Assim que a instance ficar running e com o check-passed podemos configurar o acesso.
+    Anotar os IP Publicos e Privados.
+    Lembrar que o IP Publico muda toda vez que a instancia reiniciar. 
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt08.png)
 
