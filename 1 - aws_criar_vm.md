@@ -549,3 +549,36 @@ Ao rodar o jupyter diretamente do prompt, ele parará de funcionar caso você de
     CGroup: /system.slice/jupyter-notebook.service
             ├─30380 /bin/bash /home/ubuntu/.jupyter_start.sh
             └─30395 /home/ubuntu/anaconda3/envs/fiap/bin/python /home/ubuntu/anaconda3/envs/fiap/bin/jupyter-notebook --no-browser -y --ip 0.0.0.0 --port 8888
+
+
+## Configurando a aplicação Python
+
+
+```
+sudo apt install unzip
+```
+
+
+```
+wget https://github.com/thiagonogueira/iris_cloud/archive/refs/heads/main.zip
+```
+
+```
+unzip main.zip
+```
+
+```
+cd ~/iris_cloud-main
+pip install requirements.txt
+```
+
+
+```
+cd ~/iris_cloud-main
+mv application.py application.py.old
+wget https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/application.py
+```
+
+```
+python ~/iris_cloud-main/application.py &
+```
