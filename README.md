@@ -18,6 +18,7 @@ Git para o trabalho de Framework de desenvolvimento do grupo 2 da Fiap, curso, e
 
 **Arquitetura Parte 1**
 
-O Desenho abaixo descreve breveamente a arquitetura inicial criada, apesar de ser funcional existem possibilidades de melhorias, como um MVP de um ambiente de desenvolvimento, essa arquitetura pode ser justificada, ao decorrer das aulas essa arquitetura será evoluída, incluiremos mais peças e iremos começar a atender os pilares do Well Architected Framework, Operational Excellence, Security, Reliability, Performance Efficiency e Cost Optimization.
+O Desenho abaixo descreve breveamente a arquitetura inicial criada, apesar de ser funcional existem possibilidades de melhorias. Como um MVP de um ambiente de desenvolvimento, essa arquitetura pode ser justificada, porém ao decorrer das aulas essa arquitetura será evoluída, incluiremos mais peças e iremos começar a atender os pilares do Well Architected Framework, que são eles: Operational Excellence, Security, Reliability, Performance Efficiency e Cost Optimization.
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ArquiteturaOneTier.png)
+[Well Architected Framework](https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/)
