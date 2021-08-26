@@ -485,5 +485,4 @@ Lembrando que os steps abaixo são somente para fins educativos, em ambientes pr
 
 5. Realizar o Teste novamente no Ip Publico na porta 8888 e desta vez o acesso deve funcionar, lembrando que esta restrito somente ao seu IP :).
 
-![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt20.png)
 
