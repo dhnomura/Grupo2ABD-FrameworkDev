@@ -487,3 +487,65 @@ Lembrando que os steps abaixo são somente para fins educativos, em ambientes pr
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt20.png)
 
+
+### Iniciar o Jupyter como serviço
+
+Ao rodar o jupyter diretamente do prompt, ele parará de funcionar caso você deslogue da VM ou finalize a conexão de ssh. Desta forma, é aconselhavel adicionar o Jupyter como um serviço do linux, fazendo com que ele inicie automaticamente a cada boot.
+
+**Nota**: Antes de iniciar esta atividade, certifique-se de que o Jupyter não está rodando na VM.
+
+1. No diretório home de seu usuário crie um novo arquivo chamado `.jupyter_start.sh` com as seguintes linhas. Lembre de ajustar as 3 linhas de definições de variáveis ANACONDA_PATH, CONDA_ENV e JUPYTER_BASE_DIR:
+   
+```
+ #!/bin/bash
+
+ ANACONDA_PATH="/home/ubuntu/anaconda3"
+ CONDA_ENV="fiap"
+
+ export PATH="${ANACONDA_PATH}/bin:$PATH"
+ source ${ANACONDA_PATH}/etc/profile.d/conda.sh
+ ${ANACONDA_PATH}/bin/conda activate ${CONDA_ENV}
+ ${ANACONDA_PATH}/envs/${CONDA_ENV}/bin/jupyter-notebook --no-browser -y --ip 0.0.0.0 --port 8888 --notebook-dir=${JUPYTER_BASE_DIR}
+ ```
+
+2. Altere a permissão do arquivo criado para `775`:
+
+    ```
+    $ chmod 775 .jupyter_start.sh
+    ```
+
+3. Agora você deve criar o arquivo `/etc/systemd/system/jupyter-notebook.service` como `sudo` e adicionar as seguintes linhas:
+
+    ```
+    [Unit]
+    Description=Jupyter Notebook Server
+
+    [Service]
+    Type=simple
+    Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:snap/bin"
+    ExecStart=/home/ubuntu/.jupyter_start.sh
+    User=ubuntu
+    Group=ubuntu
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+4. Inicie o serviço e o habilite para rodar automaticamento do boot:
+
+    ```
+    sudo systemctl start jupyter-notebook.service
+    sudo systemctl enable jupyter-notebook.service
+    ```
+
+5. Verifique se o serviço está rodando corretamente:
+
+    ```
+    $ sudo systemctl status jupyter-notebook.service
+    ● jupyter-notebook.service - Jupyter Notebook Server
+    Loaded: loaded (/etc/systemd/system/jupyter-notebook.service; enabled; vendor preset: enabled)
+    Active: active (running) since Tue 2020-10-06 17:53:45 UTC; 32min ago
+    Main PID: 30380 (.jupyter_start.)
+        Tasks: 2 (limit: 4680)
+    CGroup: /system.slice/jupyter-notebook.service
+            ├─30380 /bin/bash /home/ubuntu/.jupyter_start.sh
+            └─30395 /home/ubuntu/anaconda3/envs/fiap/bin/python /home/ubuntu/anaconda3/envs/fiap/bin/jupyter-notebook --no-browser -y --ip 0.0.0.0 --port 8888
