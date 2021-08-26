@@ -27,4 +27,5 @@ O Desenho abaixo descreve breveamente a arquitetura inicial criada, apesar de se
 * Cost Optimization.
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ArquiteturaOneTier.png)
+
 [Well Architected Framework](https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/)
