@@ -575,7 +575,7 @@ Instalar requirimentos
 
 ```
 cd ~/iris_cloud-main
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 
@@ -584,7 +584,7 @@ Baixar arquivo customizado
 ```
 cd ~/iris_cloud-main
 mv application.py application.py.old
-wget https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/application.py
+wget https://raw.githubusercontent.com/dhnomura/Grupo2ABD-FrameworkDev/main/application.py
 ```
 
 Iniciar Aplicação
