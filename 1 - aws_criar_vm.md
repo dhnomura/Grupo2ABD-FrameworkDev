@@ -549,7 +549,7 @@ Ao rodar o jupyter diretamente do prompt, ele parará de funcionar caso você de
     CGroup: /system.slice/jupyter-notebook.service
             ├─30380 /bin/bash /home/ubuntu/.jupyter_start.sh
             └─30395 /home/ubuntu/anaconda3/envs/fiap/bin/python /home/ubuntu/anaconda3/envs/fiap/bin/jupyter-notebook --no-browser -y --ip 0.0.0.0 --port 8888
-
+    ```
 
 ## Configurando a aplicação Python
 
@@ -596,3 +596,48 @@ python ~/iris_cloud-main/application.py &
 Validar a aplicação:
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt21.2.png)
+
+1. Criar o arquivo de startup do Iris APP 
+
+    ```
+    echo "/home/ubuntu/anaconda3/bin/python ~/iris_cloud-main/application.py" >> /home/ubuntu/.iris_app_start.sh
+    chmod +x /home/ubuntu/.app_start.sh
+    ```
+
+2. Agora você deve criar o arquivo `/etc/systemd/system/iris_app.service` como `sudo` e adicionar as seguintes linhas:
+
+    ```
+    [Unit]
+    Description=Iris App
+
+    [Service]
+    Type=simple
+    Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:snap/bin:/home/ubuntu/anaconda3/bin"
+    ExecStart=/home/ubuntu/.iris_app_start.sh
+    User=ubuntu
+    Group=ubuntu
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+
+4. Inicie o serviço e o habilite para rodar automaticamento do boot:
+
+    ```
+    sudo systemctl start iris_app.service
+    sudo systemctl enable iris_app.service
+    ```
+
+5. Verifique se o serviço está rodando corretamente:
+
+    ```
+    $ sudo systemctl status jupyter-notebook.service
+    ● jupyter-notebook.service - Jupyter Notebook Server
+    Loaded: loaded (/etc/systemd/system/jupyter-notebook.service; enabled; vendor preset: enabled)
+    Active: active (running) since Tue 2020-10-06 17:53:45 UTC; 32min ago
+    Main PID: 30380 (.jupyter_start.)
+        Tasks: 2 (limit: 4680)
+    CGroup: /system.slice/jupyter-notebook.service
+            ├─30380 /bin/bash /home/ubuntu/.jupyter_start.sh
+            └─30395 /home/ubuntu/anaconda3/envs/fiap/bin/python /home/ubuntu/anaconda3/envs/fiap/bin/jupyter-notebook --no-browser -y --ip 0.0.0.0 --port 8888
+    ```
