@@ -5,7 +5,9 @@ Git para o trabalho de Framework de desenvolvimento do grupo 2 da Fiap, curso, e
 
 # Sumário
 
-[Aula 01 - AWS Criando uma VM EC2](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/1%20-%20aws_criar_vm.md)
+[Parte 01 - AWS Criando uma VM EC2](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/1%20-%20aws_criar_vm.md)
+
+# Parte 1 - Provisionando uma VM
 
 **Arquitetura Parte 1**
 
@@ -21,9 +23,8 @@ O Desenho abaixo descreve breveamente a arquitetura inicial criada, apesar de se
 * Performance Efficiency
 * Cost Optimization.
 
-# Parte 1 - Provisionando uma VM
 
-[URL Parte 1](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/1%20-%20aws_criar_vm.md)
+[Guia de Refencia Parte 1 - Click aqui](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/1%20-%20aws_criar_vm.md)
 
 1.1 Provisionar uma VM com Ubuntu
 
@@ -44,7 +45,6 @@ Nesta etapa iremos criar uma imagem com a aplicação instalação instalada, as
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/6d393f77ca3a668a013c5c92d5f98474c0638abd/imagens/ArquiteturaAMI.png)
 
-## Steps Parte 2
 
 [Guia de Refencia Parte 2  - Click aqui](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/2%20-%20aws_criar_ami.md)
 
