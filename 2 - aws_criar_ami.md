@@ -1,5 +1,4 @@
-
-
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/6d393f77ca3a668a013c5c92d5f98474c0638abd/imagens/ArquiteturaAMI.png)
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula02Pt01.png)
 
@@ -32,8 +31,4 @@
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula02Pt15.png)
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula02Pt16.png)
-
-
-
-
 
