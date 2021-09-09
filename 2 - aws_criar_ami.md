@@ -1,4 +1,9 @@
-![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/6d393f77ca3a668a013c5c92d5f98474c0638abd/imagens/ArquiteturaAMI.png)
+# 2 - AWS - Criar uma Imagem com a aplicação para ser re-utilizada
+
+
+1. Abaixo temos 
+
+
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula02Pt01.png)
 
