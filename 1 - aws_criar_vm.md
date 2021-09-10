@@ -20,18 +20,22 @@ Vale lembrar que este passos estão sendo realizados de forma que seja o mais si
    
    A VM será criada da forma mais simples possivel, abaixo as unicas modificações e configurações que serão necessárias:
 
+     ```
      **Amazon Machine Image (AMI)**  ->  Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
      
      **Instance Type**               ->  t2.micro
      
      **Auto-assign Public IP**       ->  Enabled
      
+     **
+
      **Key Pair**                    ->  Create a new Key Pair **Fazer o Download e Salvar com cuidado**
+     ```
 
 
 Caso seja a primeira vez que esteja provissionando um EC2, pode seguir este "Passo a Passo" abaixo:
 
-3. Launch Instance -> Launch Instance
+1. Launch Instance -> Launch Instance
 
 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/Aula01Pt02.png)
@@ -602,7 +606,7 @@ Validar a aplicação:
 
     ```
     echo "/home/ubuntu/anaconda3/bin/python ~/iris_cloud-main/application.py" >> /home/ubuntu/.iris_app_start.sh
-    chmod +x /home/ubuntu/.app_start.sh
+    chmod +x /home/ubuntu/.iris_app_start.sh
     ```
 
 2. Agora você deve criar o arquivo `/etc/systemd/system/iris_app.service` como `sudo` e adicionar as seguintes linhas:
