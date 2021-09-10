@@ -501,6 +501,7 @@ Ao rodar o jupyter diretamente do prompt, ele parará de funcionar caso você de
 
  ANACONDA_PATH="/home/ubuntu/anaconda3"
  CONDA_ENV="fiap"
+ JUPYTER_BASE_DIR="/home/ubuntu/iris_cloud-main/notebooks"
 
  export PATH="${ANACONDA_PATH}/bin:$PATH"
  source ${ANACONDA_PATH}/etc/profile.d/conda.sh
