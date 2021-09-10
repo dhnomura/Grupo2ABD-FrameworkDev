@@ -501,7 +501,7 @@ Ao rodar o jupyter diretamente do prompt, ele parará de funcionar caso você de
 
  ANACONDA_PATH="/home/ubuntu/anaconda3"
  CONDA_ENV="fiap"
- JUPYTER_BASE_DIR="/home/ubuntu/iris_cloud-main/notebooks"  
+ JUPYTER_BASE_DIR="/home/ubuntu/iris_cloud-main" 
 
  export PATH="${ANACONDA_PATH}/bin:$PATH"
  source ${ANACONDA_PATH}/etc/profile.d/conda.sh
@@ -509,13 +509,13 @@ Ao rodar o jupyter diretamente do prompt, ele parará de funcionar caso você de
  ${ANACONDA_PATH}/envs/${CONDA_ENV}/bin/jupyter-notebook --no-browser -y --ip 0.0.0.0 --port 8888 --notebook-dir=${JUPYTER_BASE_DIR}
  ```
 
-2. Altere a permissão do arquivo criado para `775`:
+1. Altere a permissão do arquivo criado para `775`:
 
     ```
     $ chmod 775 .jupyter_start.sh
     ```
 
-3. Agora você deve criar o arquivo `/etc/systemd/system/jupyter-notebook.service` como `sudo` e adicionar as seguintes linhas:
+2. Agora você deve criar o arquivo `/etc/systemd/system/jupyter-notebook.service` como `sudo` e adicionar as seguintes linhas:
 
     ```
     [Unit]
@@ -531,14 +531,14 @@ Ao rodar o jupyter diretamente do prompt, ele parará de funcionar caso você de
     [Install]
     WantedBy=multi-user.target
     ```
-4. Inicie o serviço e o habilite para rodar automaticamento do boot:
+3. Inicie o serviço e o habilite para rodar automaticamento do boot:
 
     ```
     sudo systemctl start jupyter-notebook.service
     sudo systemctl enable jupyter-notebook.service
     ```
 
-5. Verifique se o serviço está rodando corretamente:
+4. Verifique se o serviço está rodando corretamente:
 
     ```
     $ sudo systemctl status jupyter-notebook.service
