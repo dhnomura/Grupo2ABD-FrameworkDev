@@ -605,7 +605,7 @@ Validar a aplicação:
 1. Criar o arquivo de startup do Iris APP 
 
     ```
-    echo "/home/ubuntu/anaconda3/bin/python ~/iris_cloud-main/application.py" >> /home/ubuntu/.iris_app_start.sh
+    echo "/home/ubuntu/anaconda3/bin/python /home/ubuntu/iris_cloud-main/application.py" >> /home/ubuntu/.iris_app_start.sh
     chmod +x /home/ubuntu/.iris_app_start.sh
     ```
 
