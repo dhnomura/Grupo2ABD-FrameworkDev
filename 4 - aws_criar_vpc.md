@@ -4,12 +4,14 @@
    2. 2 Subnets Privadas para aplicativos em zonas de disponibilidades distintas
    3. 2 Subnets Privadas para Database em zonas de disponibilidades distintas
 3. Criar um Internet Gateway
-4. Alocas 2 Elastic IPs
+4. Alocar 2 Elastic IPs
 5. Criar 2 Nat Gateway em zonas de disponibilidades distintas
 6. Criar 4 Route Tables
    1. 2 Route tables Publicas
    2. 2 Route tables Privadas
 7. Configurar rotas das Route Tables
+
+VPC
 
 Subnets
 
@@ -30,12 +32,14 @@ Name     |VPC Attached  |
 -------- |------------- |
 fiap-igw |fiap-vpc      |
 
+Elastic IPs
+
 Nat Gateway (NGW)
 
-Name        |Subnet          |
------------ |--------------- |
-fiap-ngw-01 |fiap-sub-pub-01 |
-fiap-ngw-02 |fiap-sub-pub-02 |
+Name        |Subnet          |Elastic IP |
+----------- |--------------- |---------- |
+fiap-ngw-01 |fiap-sub-pub-01 |Fiap-IP-01 |
+fiap-ngw-02 |fiap-sub-pub-02 |Fiap-IP-02 |
 
 Route Tables
 
