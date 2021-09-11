@@ -26,6 +26,10 @@ Internet Gateway (IGW) - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_In
 
 VPC
 
+Name     |CIDR Range  |
+-------- |------------- |
+fiap-vpc |172.16.0.0/22 |
+
 Subnets
 
 Name           |Subnet address	|Netmask			|Range of addresses			|Hosts   | Usage    |Availability Zone|
@@ -71,6 +75,9 @@ fiap-route-priv-02 |fiap-sub-app-02, fiap-sub-db-02 |0.0.0.0/0     |fiap-ngw-02 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc02.png)
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc03.png)
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc04.png)
+
+## Criando as Subnets
+
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc05.png)
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc06.png)
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc07.png)
