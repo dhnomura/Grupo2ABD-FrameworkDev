@@ -4,7 +4,7 @@
 
 ![alt text](https://raw.githubusercontent.com/dhnomura/Grupo2ABD-FrameworkDev/main/imagens/HighLevelVPC.PNG)
 
-## Componentes
+## Documentação
 
 Internet Gateway (IGW) - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html
 
@@ -21,6 +21,8 @@ Internet Gateway (IGW) - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_In
    1. 2 Route tables Publicas
    2. 2 Route tables Privadas
 7. Configurar rotas das Route Tables
+
+## Recursos
 
 VPC
 
@@ -60,3 +62,17 @@ fiap-route-pub-01  |fiap-sub-pub-01                 |0.0.0.0/0     |fiap-igw    
 fiap-route-pub-02  |fiap-sub-pub-02                 |0.0.0.0/0     |fiap-igw     |
 fiap-route-priv-01 |fiap-sub-app-01, fiap-sub-db-01 |0.0.0.0/0     |fiap-ngw-01  |
 fiap-route-priv-02 |fiap-sub-app-02, fiap-sub-db-02 |0.0.0.0/0     |fiap-ngw-02  |
+
+## Procedimento
+
+## Criando a VPC
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc01.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc02.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc03.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc04.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc05.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc06.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc07.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc08.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc09.png)
