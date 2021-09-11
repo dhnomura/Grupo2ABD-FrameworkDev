@@ -61,4 +61,8 @@ Nesta etapa iremos criar uma imagem com a aplicação instalação instalada, as
 
 2.5 Acessar a aoplicação
 
+# Parte 3 - Criar uma nova VPC
 
+**Arquitetura Parte 3**
+
+![alt text](https://raw.githubusercontent.com/dhnomura/Grupo2ABD-FrameworkDev/main/imagens/HighLevelVPC.PNG)

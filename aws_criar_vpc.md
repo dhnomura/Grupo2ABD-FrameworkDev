@@ -6,8 +6,14 @@
 
 ## Documentação
 
+Virtual Private Cloud - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+Subnet - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html
 Internet Gateway (IGW) - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html
+Nat Gateway (NGW) - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html
+Route Table - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html
+Elastic IP - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html
 
+## Roteiro
 
 1. Criar Nova VPC
 2. Criar 6 Subnets
