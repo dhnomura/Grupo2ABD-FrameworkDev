@@ -24,13 +24,13 @@ Internet Gateway (IGW) - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_In
 
 ## Recursos
 
-VPC
+**VPC**
 
 Name     |CIDR Range  |
 -------- |------------- |
 fiap-vpc |172.16.0.0/22 |
 
-Subnets
+**Subnets**
 
 Name           |Subnet address	|Netmask			|Range of addresses			|Hosts   | Usage    |Availability Zone|
 -------------- |--------------- |------------------ |-------------------------- |------- |--------- |-|
@@ -43,7 +43,7 @@ fiap-sub-app-02|172.16.2.128/25	|255.255.255.128	|172.16.2.128 - 172.16.2.255	|1
 fiap-sub-db-01 |172.16.3.0/25	|255.255.255.128	|172.16.3.0 - 172.16.3.127	|126     | DB 1     | sa-east-1a|
 fiap-sub-db-02 |172.16.3.128/25	|255.255.255.128	|172.16.3.128 - 172.16.3.255	|126 | DB 2     | sa-east-1b|
 
-Internet Gateway (IGW)
+**Internet Gateway (IGW)**
 
 Name     |VPC Attached  |
 -------- |------------- |
@@ -51,14 +51,14 @@ fiap-igw |fiap-vpc      |
 
 Elastic IPs
 
-Nat Gateway (NGW)
+**Nat Gateway (NGW)**
 
 Name        |Subnet          |Elastic IP |
 ----------- |--------------- |---------- |
 fiap-ngw-01 |fiap-sub-pub-01 |Fiap-IP-01 |
 fiap-ngw-02 |fiap-sub-pub-02 |Fiap-IP-02 |
 
-Route Tables
+**Route Tables**
 
 Name               |Subnet Associada                |Destination   |Target       |
 ------------------ |------------------------------- |------------- |------------ |
@@ -83,3 +83,56 @@ fiap-route-priv-02 |fiap-sub-app-02, fiap-sub-db-02 |0.0.0.0/0     |fiap-ngw-02 
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc07.png)
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc08.png)
 ![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc09.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc10.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc11.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc12.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc13.png)
+
+## Criando o Internet Gateway
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/vpc13.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/igw01.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/igw02.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/igw03.png)
+
+## Elastic IPs
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ElasticIP01.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ElasticIP02.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ElasticIP03.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ElasticIP04.png)
+
+## Nat Gateways
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ngw01.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ngw02.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ngw03.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ngw04.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ngw05.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/ngw06.png)
+
+## Route Tables
+
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route01.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route02.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route03.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route04.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route05.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route06.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route07.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route08.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route09.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route10.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route11.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route12.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route13.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route14.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route15.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route16.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route17.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route18.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route19.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route20.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route21.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route22.png)
+![alt text](https://github.com/dhnomura/Grupo2ABD-FrameworkDev/blob/main/imagens/route23.png
