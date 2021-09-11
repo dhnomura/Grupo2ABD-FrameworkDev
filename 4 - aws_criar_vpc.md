@@ -1,6 +1,13 @@
-# Arquitetura Proposta para a VPC
+# Virtual Private Cloud (VPC)
+
+## Arquitetura Proposta para a VPC
 
 ![alt text](https://raw.githubusercontent.com/dhnomura/Grupo2ABD-FrameworkDev/main/imagens/HighLevelVPC.PNG)
+
+## Componentes
+
+Internet Gateway (IGW) - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html
+
 
 1. Criar Nova VPC
 2. Criar 6 Subnets
